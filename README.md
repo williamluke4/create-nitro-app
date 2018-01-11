@@ -1,21 +1,22 @@
-# Create Next App
+# Create Nitro App
 
 The easiest way to create a [React](https://facebook.github.io/react) app with server-side rendering thanks to [Next.js](https://github.com/zeit/next.js)
+with the modules below :
 
-[![Mentioned in Awesome Next JS](https://awesome.re/mentioned-badge.svg)](https://github.com/unicodeveloper/awesome-nextjs)
+* [Material-UI](http://www.material-ui.com/) - React components that implement Google's Material Design
+* [Styled-Components](https://www.styled-components.com/) - Visual primitives for the component age.
+* [Flow](https://flow.org/) - A Static type checker for javascript
 
 - [Getting Started](#getting-started) — How to create an app
-- [User Guide](https://github.com/segmentio/create-next-app/blob/master/lib/templates/default/README.md) —  How to develop apps started with Create Next App
-- [Starting from Examples](#starting-from-examples) — How to create an app from a Next.js example
 
-If you run into any issues or have feedback, please [file an issue](https://github.com/segmentio/create-next-app/issues/new)
+If you run into any issues or have feedback, please [file an issue](https://github.com/williamluke4/create-nitro-app/issues/new)
 
 ## Overview
 
 ```sh
-npm install -g create-next-app
+npm install -g create-nitro-app
 
-create-next-app my-app
+create-nitro-app my-app
 cd my-app/
 npm run dev
 ```
@@ -23,16 +24,16 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) to view your running app.
 When you're ready for production, run `npm run build` then `npm run start`.
 
-<img width="600" alt="Create Next App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556236/0ac91ca6-2cae-11e7-87ae-bb7974285063.png" />
+<img width="600" alt="Create Nitro App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556236/0ac91ca6-2cae-11e7-87ae-bb7974285063.png" />
 
-<img width="600" alt="Create Next App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556240/111fc3b6-2cae-11e7-84b6-961de4fd27f9.png" />
+<img width="600" alt="Create Nitro App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556240/111fc3b6-2cae-11e7-84b6-961de4fd27f9.png" />
 
 ### Start Coding Now
 
 You **don't** need to install or setup Webpack or Babel.
-They come packaged with `next`, so you can just start coding.
+They come packaged with `nitro`, so you can just start coding.
 
-After running `create-next-app`, you're good to go!
+After running `create-nitro-app`, you're good to go!
 
 ## Getting Started
 
@@ -41,19 +42,19 @@ After running `create-next-app`, you're good to go!
 Install it once globally:
 
 ```sh
-npm install -g create-next-app
+npm install -g flow, flow-typed, create-nitro-app
 ```
 
 **You’ll need to have Node >= 6 on your machine**. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
 
-**You don't need to use Node as your primary backend**. The Node installation is only required for Create Next App and running the Next.js server in development/production.
+**You don't need to use Node as your primary backend**. The Node installation is only required for Create Nitro App and running the Nitro.js server in development/production.
 
 ### Creating an App
 
 To create a new app, run:
 
 ```
-create-next-app my-app
+create-nitro-app my-app
 cd my-app
 ```
 
@@ -62,23 +63,29 @@ Inside that directory, it will generate the initial project structure and instal
 
 ```
 my-app/
-  README.md
-  package.json
+  flow-typed
+  node_modules
+  pages
+  static
+  types
+  .babelrc
+  .flowconfig
+  .gitignore
   next.config.js
-  components/
-    index.js
-    head.js
-    nav.js
-  pages/
-    index.js
-  static/
-    favicon.ico
+  package.json
+  postcss.config.js
+  README.md
+  yarn-error.log
+  yarn.lock
 ```
 
-Routing in Next.js is based on the file system, so `./pages/index.js` maps to the `/` route and
+
+
+
+Routing in Nitro.js is based on the file system, so `./pages/index.js` maps to the `/` route and
 `./pages/about.js` would map to `/about`.
 
-The `./static` directory maps to `/static` in the `next` server, so you can put all your
+The `./static` directory maps to `/static` in the `nitro` server, so you can put all your
 other static resources like images or compiled CSS in there.
 
 Out of the box, we get:
@@ -100,7 +107,7 @@ You will also see any errors in the console.
 
 ### `npm run build` or `yarn build`
 
-Builds the app for production to the `.next` folder.<br>
+Builds the app for production to the `.nitro` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### `npm run start` or `yarn start`
@@ -110,23 +117,15 @@ The application should be compiled with \`npm run build\` first.
 
 Now you're ready to code & deploy your app!
 
-## Starting from Examples
 
-There are a ton of examples in the [Next.js repo](https://github.com/zeit/next.js/tree/master/examples/) (and growing!) that you can use to bootstrap your app.
-
-To use an example:
-
-1. Go to https://open.segment.com/create-next-app#examples
-2. Search for an example you want and get it's name (looks like `basic-css`)
-3. Run: `create-next-app --example basic-css example-app`
-4. Done 💥
 
 ## Acknowledgements
 
 We are grateful to the authors of existing related projects for their ideas as inspiration:
 
+* [Create Next App](https://github.com/segmentio/create-next-app)
 * [Create React App](https://github.com/facebookincubator/create-react-app)
-* [Next.js](https://github.com/zeit/next.js)
+* [Next.js](https://github.com/zeit/nitro.js)
 * [@eanplatter](https://github.com/eanplatter)
 * [@insin](https://github.com/insin)
 * [@mxstbr](https://github.com/mxstbr)
@@ -150,7 +149,7 @@ Looking for alternatives? Here are some other project starter kits:
 * [sku](https://github.com/seek-oss/sku)
 
 
-Questions? Feedback? [Please let us know](https://github.com/segmentio/create-next-app/issues/new)
+Questions? Feedback? [Please let us know](https://github.com/williamluke4/create-nitro-app/issues/new)
 
 ## License (MIT)
 
@@ -166,7 +165,7 @@ WWWWWW||WWWWWW
         _||_|| _||_||
        (__|__|(__|__|
 ```
-Copyright (c) 2017-present Segment.io, Inc. friends@segment.com
+Copyright (c) 2017-present Atto-Byte, Inc. william@atto-byte.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

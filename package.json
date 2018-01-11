@@ -1,6 +1,6 @@
 {
   "name": "create-nitro-app",
-  "description": "Create Next.js apps in one command",
+  "description": "Create Next.js apps with a few select packages",
   "version": "0.5.2",
   "main": "index.js",
   "license": "MIT",
