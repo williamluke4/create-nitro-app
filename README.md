@@ -3,9 +3,8 @@
 The easiest way to create a [React](https://facebook.github.io/react) app with server-side rendering thanks to [Next.js](https://github.com/zeit/next.js)
 with the modules below :
 
-* [Material-UI](http://www.material-ui.com/) - React components that implement Google's Material Design
 * [Styled-Components](https://www.styled-components.com/) - Visual primitives for the component age.
-* [Flow](https://flow.org/) - A Static type checker for javascript
+* [Typescript](https://www.typescriptlang.org/) - A Static type checker for javascript
 
 - [Getting Started](#getting-started) — How to create an app
 
@@ -14,11 +13,11 @@ If you run into any issues or have feedback, please [file an issue](https://gith
 ## Overview
 
 ```sh
-npm install -g create-nitro-app
+yarn global add create-nitro-app
 
 create-nitro-app my-app
 cd my-app/
-npm run dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view your running app.
@@ -39,11 +38,7 @@ After running `create-nitro-app`, you're good to go!
 
 ### Installation
 
-Install it once globally:
 
-```sh
-npm install -g flow, flow-typed, create-nitro-app
-```
 
 **You’ll need to have Node >= 6 on your machine**. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
 
@@ -60,27 +55,6 @@ cd my-app
 
 It will create a directory called `my-app` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install necessary dependencies:
-
-```
-my-app/
-  flow-typed
-  node_modules
-  pages
-  static
-  types
-  .babelrc
-  .flowconfig
-  .gitignore
-  next.config.js
-  package.json
-  postcss.config.js
-  README.md
-  yarn-error.log
-  yarn.lock
-```
-
-
-
 
 Routing in Nitro.js is based on the file system, so `./pages/index.js` maps to the `/` route and
 `./pages/about.js` would map to `/about`.

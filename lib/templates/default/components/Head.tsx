@@ -1,20 +1,20 @@
 // @flow
 
 import NextHead from 'next/head';
-import React from 'react';
+import * as React from 'react';
 
 const defaultDescription = '';
 const defaultOGURL = '';
 const defaultOGImage = '';
 
-type Props = {
-  title: string,
-  description: string,
-  url: string,
-  ogImage: string
+interface IProps {
+  title: string;
+  description: string;
+  url: string;
+  ogImage: string;
 }
 
-const Head = (props: Props) => (
+const Head = (props: IProps) => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
@@ -34,7 +34,7 @@ const Head = (props: Props) => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
   </NextHead>
-)
+);
 
 
-export default Head
+export default Head;
